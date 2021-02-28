@@ -1,0 +1,253 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+body {
+    background-color: black;
+    font: 16px/28px arial, sans-serif;
+    z-index: -9999;
+}
+
+
+
+.header .dropdown .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.content .header .dropdown {
+    position:absolute;
+    display: inline-block;
+    right: 180px;
+    bottom: 657px;
+    
+  }
+
+
+.content .header .dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .content .header .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.content .header .dropdown-content a:hover {background-color: #f1f1f1}
+
+.content .header .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.content .header .dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+  }
+
+
+.header ul li {
+    display: inline-block;
+    margin-top: 35px;
+    margin-right: 0px;
+    padding: 25px;
+}
+
+.header ul {
+    display: inline-block;
+
+}
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 1px;
+    font-size: 15px;
+}
+
+.header a:hover {
+    color: grey;
+}
+
+.hero {
+    width: 495px;
+    height: 542px;
+    margin-top: 100px;
+    background-image: url(hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -20;
+    float: left;
+    
+}
+
+.header {
+    margin-top: 40px;
+    height: 50px;
+    margin-bottom: 170px;
+    margin-right: 200px;
+    
+    
+    
+}  
+
+.content {
+    width: 570px;
+    height: 800px;
+    position: relative;
+    float: left;
+    margin-left: 30px;
+}
+
+.footer {
+    background-color: #202020;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+
+.content h2 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 500px;
+    margin-bottom: 5px;
+    
+
+}
+.content h4 {
+    color: white;
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    
+}
+
+.content h5 {
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 208px;
+}
+
+hr { display: block;overflow: hidden; border-style: inset; border-width: 1px;}
+
+#about {
+    text-align: center;
+    margin-left: 30px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.content .tentang {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width:100%;
+}
+
+
+.content .ig {
+    width: 200px;
+    height: 200px;
+    background-image: url(instagram.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    left: 30px;
+    bottom: 220px;
+}
+
+.content .yt {
+    width: 150px;
+    height: 150px;
+    background-image: url(yt.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    position: absolute;
+    left: 130px;
+    bottom: 280px;
+}
+
+
+.footer .copy {
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+.content .tentang {
+      width:50%;
+      margin-left: 80px;
+    }
+#about {
+    width: 70%;
+    margin-left: 25px;
+    
+}
+  }
+
+
